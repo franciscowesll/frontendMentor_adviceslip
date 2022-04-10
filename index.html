@@ -7,22 +7,60 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
 </head>
 <body>
+<main>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="container">
+  <h2>Não sou o responsável por estas frases. 
+    <br>
+    Apenas estou aplicando conhecimentos sobre conexões com API
+  </h2>
+  <div class="mini-container">  
+    <div class="atribuicao">
+      
+      <section class="number">
+        Advice #<span id='idAdvice'></span>
+        <!-- Advice ID goes here -->
+      </section>
+      
+      <section class="mensagem" id="mensagem">
+      
+        <!-- Advice text goes here -->
+      </section> 
+      
+      <section class="linha">
+       
+        <div>
+          <hr>
+        </div>
+        
+        <section class="linhaVertical">
+          <div></div>
+          <div></div>
+        </section>
+        
+        <div>
+          <hr>
+        </div>
+      
+      </section>
+      
+      
+    </div> 
+    <section class="attribution">
+      <button type="submit" onclick="receberDados()">
+        <img src="./images/icon-dice.svg" class="img">
+      </button>
+    </section>
   </div>
+</div>
+  
+</main>
+  <script src="main.js"> </script>
 </body>
 </html>
